@@ -72,3 +72,31 @@ footer{display:flex;justify-content:space-between;padding:25px clamp(20px,5vw,72
     height:min(48vw,627px);
   }
 }
+
+/* Final desktop hero sizing: keep image clear of copy */
+@media(min-width:951px){
+  .hero{
+    grid-template-columns:minmax(0,1fr) auto !important;
+    gap:clamp(28px,3vw,48px) !important;
+  }
+  .hero-copy{min-width:0}
+  .hero-photo,
+  .hero-photo picture,
+  .hero-photo img{
+    width:min(38vw,520px) !important;
+    height:min(38vw,520px) !important;
+  }
+  .hero-photo{
+    max-width:520px !important;
+    justify-self:end;
+  }
+}
+@media(min-width:1600px){
+  .hero-photo,
+  .hero-photo picture,
+  .hero-photo img{
+    width:560px !important;
+    height:560px !important;
+  }
+  .hero-photo{max-width:560px !important}
+}
