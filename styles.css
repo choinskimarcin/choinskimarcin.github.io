@@ -201,3 +201,45 @@ footer{
   background-image:none !important;
   text-decoration:none !important;
 }
+
+/* Hard-remove any underline/border generated under email text */
+.contact-email-text,
+.contact-email-text *,
+.contact-email-text a,
+.contact-email-text a:link,
+.contact-email-text a:visited,
+.contact-email-text a:hover,
+.contact-email-text a:active{
+  border:0 !important;
+  border-bottom:0 !important;
+  outline:0 !important;
+  box-shadow:none !important;
+  text-decoration:none !important;
+  text-decoration-line:none !important;
+  text-decoration-color:transparent !important;
+  background-image:none !important;
+}
+.contact-email-text{
+  position:relative;
+  padding-bottom:10px !important;
+}
+.actions .contact-email-text::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:4px;
+  background:var(--paper);
+  pointer-events:none;
+}
+.cta .contact-email-text::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:4px;
+  background:#d9cdbd;
+  pointer-events:none;
+}
