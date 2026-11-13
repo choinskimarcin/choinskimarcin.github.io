@@ -178,3 +178,26 @@ a[href^="mailto:"]{
   border-bottom:0 !important;
   box-shadow:none !important;
 }
+
+/* Remove horizontal separators around the two email areas */
+.hero{
+  border-bottom:0 !important;
+}
+.cta{
+  border-top:0 !important;
+  border-bottom:0 !important;
+}
+.cta + footer,
+footer{
+  border-top:0 !important;
+  box-shadow:none !important;
+}
+.actions,
+.contact-email-text,
+.contact-email-text span{
+  border:0 !important;
+  outline:0 !important;
+  box-shadow:none !important;
+  background-image:none !important;
+  text-decoration:none !important;
+}
