@@ -100,3 +100,23 @@ footer{display:flex;justify-content:space-between;padding:25px clamp(20px,5vw,72
   }
   .hero-photo{max-width:560px !important}
 }
+
+/* Smaller desktop hero image */
+@media(min-width:951px){
+  .hero-photo,
+  .hero-photo picture,
+  .hero-photo img{
+    width:min(31vw,450px) !important;
+    height:min(31vw,450px) !important;
+  }
+  .hero-photo{max-width:450px !important}
+}
+@media(min-width:1600px){
+  .hero-photo,
+  .hero-photo picture,
+  .hero-photo img{
+    width:480px !important;
+    height:480px !important;
+  }
+  .hero-photo{max-width:480px !important}
+}
