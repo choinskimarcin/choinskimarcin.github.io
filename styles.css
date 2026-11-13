@@ -125,7 +125,7 @@ footer{display:flex;justify-content:space-between;padding:25px clamp(20px,5vw,72
   display:inline-block;
   font-weight:700;
   text-decoration:none;
-  border-bottom:1px solid currentColor;
+  border-bottom:none;
   padding:10px 0 6px;
 }
 .contact-email:hover{opacity:.7}
@@ -139,4 +139,22 @@ footer{display:flex;justify-content:space-between;padding:25px clamp(20px,5vw,72
 .contact-email-large{
   border-bottom:none !important;
   text-decoration:none !important;
+}
+
+.contact-email,
+.contact-email:link,
+.contact-email:visited,
+.contact-email:hover,
+.contact-email:active,
+.contact-email-large{
+  border:0 !important;
+  border-bottom:0 !important;
+  text-decoration:none !important;
+  box-shadow:none !important;
+  background-image:none !important;
+}
+.contact-email::before,
+.contact-email::after{
+  content:none !important;
+  display:none !important;
 }
