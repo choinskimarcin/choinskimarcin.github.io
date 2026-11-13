@@ -133,3 +133,10 @@ footer{display:flex;justify-content:space-between;padding:25px clamp(20px,5vw,72
   font-size:clamp(18px,2vw,24px);
   margin-top:8px;
 }
+
+.contact-email,
+.contact-email:hover,
+.contact-email-large{
+  border-bottom:none !important;
+  text-decoration:none !important;
+}
