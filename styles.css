@@ -37,3 +37,38 @@ footer{display:flex;justify-content:space-between;padding:25px clamp(20px,5vw,72
   .hero-photo{aspect-ratio:1/1}
   .hero-photo picture img{object-position:center center}
 }
+
+/* Desktop hero: avoid moire from aggressive browser resampling */
+@media(min-width:951px){
+  .hero{
+    grid-template-columns:minmax(0,1fr) 627px;
+    gap:clamp(36px,5vw,80px);
+  }
+  .hero-photo{
+    width:627px;
+    height:627px;
+    max-width:627px;
+    aspect-ratio:auto;
+    justify-self:end;
+  }
+  .hero-photo picture,
+  .hero-photo img{
+    width:627px;
+    height:627px;
+  }
+  .hero-photo img{
+    object-fit:cover;
+    object-position:center center;
+  }
+}
+@media(min-width:951px) and (max-width:1300px){
+  .hero{
+    grid-template-columns:minmax(0,1fr) min(48vw,627px);
+  }
+  .hero-photo,
+  .hero-photo picture,
+  .hero-photo img{
+    width:min(48vw,627px);
+    height:min(48vw,627px);
+  }
+}
