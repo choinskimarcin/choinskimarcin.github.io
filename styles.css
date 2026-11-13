@@ -167,3 +167,14 @@ footer{display:flex;justify-content:space-between;padding:25px clamp(20px,5vw,72
   text-decoration:none !important;
   box-shadow:none !important;
 }
+
+.contact-email-text,
+.contact-email-text span,
+a[x-apple-data-detectors],
+a[href^="mailto:"]{
+  color:inherit !important;
+  text-decoration:none !important;
+  border:0 !important;
+  border-bottom:0 !important;
+  box-shadow:none !important;
+}
