@@ -158,3 +158,12 @@ footer{display:flex;justify-content:space-between;padding:25px clamp(20px,5vw,72
   content:none !important;
   display:none !important;
 }
+
+.contact-email-text{
+  display:inline-block;
+  font-weight:700;
+  padding:10px 0 6px;
+  border:0 !important;
+  text-decoration:none !important;
+  box-shadow:none !important;
+}
